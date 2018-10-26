@@ -6,7 +6,7 @@ import Dashboard from './Dashboard'
 
 class App extends Component {
   constructor() {
-    super;
+    super(props);
 
     this.state ={ view: 'main', };
   }
