@@ -18,8 +18,10 @@ class App extends Component {
     .then(res => res.json())
     .then(res => {
       let data = res.data;
-      this.setState({users: data })
-      this.setState({view: 'list'})
+      this.setState({
+        users: data,
+        view: 'list',
+      })
     })
   }
   
