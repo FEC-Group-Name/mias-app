@@ -8,10 +8,12 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state ={ view: 'main', };
+    this.state = {
+      view: 'main',
+    };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     fetch('/api/users')
     .then(res => res.json())
     .then(res => {
@@ -31,9 +33,5 @@ class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  
-};
 
 export default App;
