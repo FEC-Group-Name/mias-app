@@ -22,7 +22,7 @@ class App extends Component {
   }
   
   render() {
-    let {view,list} = this.state;
+    const { view, list } = this.state;
     return (
       <div>
         {view === 'main' ? <Dashboard /> : null}
